@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>script</title>
+</head>
+<body>
+    <input type="number" placeholder="enter first value" id="fn">
+    <input type="number" placeholder="enter second value" id="sn">
+
+<button onclick="sum()">+</button>
+<button onclick="sub()">-</button>
+<button onclick="mul()">*</button>
+<button onclick="div()">/</button>
+<h1 id="result">this is result</h1>
+
+<script>
+function sum(){
+    let x=document.getElementById("fn").value;
+    let y=document.getElementById("sn").value;
+    let xvalue=parseInt(x);
+    let yvalue=parseInt(y);
+    const res=xvalue+yvalue;
+   document.write(res)
+    document.getElementById("result").innerHTML=("result is:"+res);
+}   
+
+function sub(){
+    let x=document.getElementById("fn").value;
+    let y=document.getElementById("sn").value;
+    let xvalue=parseInt(x);
+    let yvalue=parseInt(y);
+    const res=xvalue-yvalue;
+   document.write(res)
+    document.getElementById("result").innerHTML=("result is:"-res);
+}   
+
+function mul(){
+    let x=document.getElementById("fn").value;
+    let y=document.getElementById("sn").value;
+    let xvalue=parseInt(x);
+    let yvalue=parseInt(y);
+    const res=xvalue*yvalue;
+   document.write(res)
+    document.getElementById("result").innerHTML=("result is:"*res);
+}   
+
+function div(){
+    let x=document.getElementById("fn").value;
+    let y=document.getElementById("sn").value;
+    let xvalue=parseInt(x);
+    let yvalue=parseInt(y);
+    const res=xvalue/yvalue;
+   document.write(res)
+    document.getElementById("result").innerHTML=("result is:"/res);
+}   
+
+</script>
+</body>
+</html>
